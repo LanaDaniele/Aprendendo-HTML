@@ -1,4 +1,4 @@
-<html>
+<html lang="pt-br">
 <head>
     <TItle>Página Principal</TItle>
 </head>
@@ -6,61 +6,559 @@
 <h1 id="inicio">Introdução a HTML</h1>
 <hr />
 <P>Bem vindo, eu te ajudarei a aprender o básico nessa Introdução a HTML, vamos começar!</P>
-<p> Seria muito bom saber seu nome!<input type="text"> e sua idade também!<input type="number"> pronto? Vamos começar!</p>
+<p> Seria muito bom saber seu nome!<input type="text"><br> E sua idade também!<input type="number"><br> Pronto? Vamos começar!</p>
     <ul>
         <h2>Índice</h2>
-        <li><a href="#estrutura"> Estrutura básica </a></li>
-        <li><a href="#tags"> Tags!</a> </li>
-        <li><a href="#atributos"> Atributos das Tags.</a></li>
-        <li><a href="#textos"> Textos.</a></li>
-        <li><a href="#listas"> Listas Ordenadas e Não Ordenadas.</a></li>
-        <li><a href="#links"> Links e Navegação.</a></li>
+             <li><a href="#estrutura"> Estrutura básica </a></li>
+             <li><a href="#tags"> Tags!</a> </li>
+             <li><a href="#atributos"> Atributos das Tags.</a></li>
+             <li><a href="#textos"> Textos.</a></li>
+             <li><a href="#listas"> Listas Ordenadas e Não Ordenadas.</a></li>
+             <li><a href="#links"> Links e Navegação.</a></li>
+    
+        <h2>Estruturando HTML</h2>
+             <li><a href="#formatando">Formatando Textos</a></li>
+             <li><a href="#div-span">Div e Span</a></li>
+             <li><a href="#fieldsets">Fieldsets</a></li>
+             <li><a href="#embeds">Embeds</a></li>
+             <li><a href="#iframes">Iframes</a></li>
+
+        <h2>Tags de Mídia</h2> 
+             <li><a href="#intro">Introdução a Tags de Mídia</a></li>
+             <li><a href="#tag-img">Tag Img</a></li>
+             <li><a href="#tag-audio">Tag Audio</a></li>
+             <li><a href="#tag-vid">Tag Video</a></li>
+
+        <h2>Tabelas</h2>
+             <li><a href="#tabelas">O que são tabelas?</a></li>
+             <li><a href="#table">Tag Table</a></li>     
+             <li><a href="#tr">Tag Tr</a></li>
+             <li><a href="#td-th">Tag Td e Th</a></li>
+             <li><a href="#t3">Tag tbody, thead e tfoot</a></li>
+            
+         <h2>Falando mais de tags</h2>
+             <li><a href="#tags-form">Tags Form</a></li>
+             <li><a href="#tag-imput">Tag Imput e Tipos</a></li>
+             <li><a href="#checkbox">Checkbox e Radio</a></li>
+             <li><a href="#buttons">Buttons e Tipos</a></li>
+             <li><a href="#select">Select e Tipos</a></li>
+             <li><a href="#textarea">Textarea</a></li>
+                    
     </ul>
+    
     <ul>
         <H2>Sites interessantes ou Uteis</H2>
-        <li>
-             <a href="https://web.dio.me/home" title="Clique aqui para ir para o Dio" target="_blank">Dio.me</a>  
-        </li>
-        <li>
-            <a href="https://www.linkedin.com/in/alana-daniele-t-lobato-4243a824a/" title="Clique aqui e acesse meu LD" target="_blank">Meu Linkedin</a>
-        </li>
-        <li>
-            <a href="http://v1.windows93.net/" title="Eu adoro esse site!" target="_blank">Windows93</a>
-        </li>
-        <li>
-            <a href="about.html" title="Clique aqui para me conhecer melhor" target="_blank">Minha Página</a>
-        </li>
+             <li><a href="https://web.dio.me/home" title="Clique aqui para ir para o Dio" target="_blank">Dio.me</a></li>
+             <li><a href="https://www.linkedin.com/in/alana-daniele-t-lobato-4243a824a/" title="Clique aqui e acesse meu LD" target="_blank">Meu Linkedin</a></li>
+             <li><a href="http://v1.windows93.net/" title="Eu adoro esse site!" target="_blank">Windows93</a></li>
+             <li><a href="about.html" title="Clique aqui para me conhecer melhor" target="_blank">Minha Página</a></li>
     </ul>
+
 <h2 id="estrutura">Estrutura básica.</h2>
+<hr />
 <small><a href="#inicio">(Voltar)</a></small>
-<p>A estrutura básica é formada pelos elementos <strong>html</strong>, <strong>head</strong> e por fim <strong">body</strong>,traduzindo, head significa cabeça e body é corpo, o que faz sentido, já que esse "body" é o corpo do texto que o usuário irá ver.</p>
+<p>
+    A estrutura básica é formada pelos elementos <strong>html</strong>, <strong>head</strong> e por fim <strong">body</strong>,traduzindo, head significa cabeça e body é corpo, o que faz sentido, já que esse "body" é o corpo do texto que o usuário irá ver.
+</p>
 <img src="data:image/jpeg;base64,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">
 <h2 id="tags">Tags!</h2>
+<hr />
 <small><a href="#inicio">(Voltar)</a></small>
-<p>Existem muitas tags, mas falemos das mais básicas, como por exemplo as tags, <strong>"i"</strong> ou <strong>"strong"</strong>, eu acabei de usar a tag strong, para deixar o texto mais forte onde eu quero destacar, como por exemplo ao citar as tags "i" e "strong", estranho e divertido não?</p>
-<P> Basicamente as tags servem para mostrar ao navegador a estrutura do site! Elas também sempre terminam com uma barrinha, o "/" sinalizando ofim da tag, tudo que abre, fecha, é claro que algumas tags não seguem a regra como no caso da tag <strong>"input"</strong>, essa tag cria um campo para digitar, igual ao que eu fiz no começo para que você pudesse se apresentar!</P>
+<p>
+    Existem muitas tags, mas falemos das mais básicas, como por exemplo as tags, <strong>"i"</strong> ou <strong>"strong"</strong>, eu acabei de usar a tag strong, para deixar o texto mais forte onde eu quero destacar, como por exemplo ao citar as tags "i" e "strong", estranho e divertido não?
+</p>
+<p> 
+    Basicamente as tags servem para mostrar ao navegador a estrutura do site! Elas também sempre terminam com uma barrinha, o "/" sinalizando ofim da tag, tudo que abre, fecha, é claro que algumas tags não seguem a regra como no caso da tag <strong>"input"</strong>, essa tag cria um campo para digitar, igual ao que eu fiz no começo para que você pudesse se apresentar!
+</p>
 <img width="150" src="https://diegomariano.com/wp-content/uploads/2020/08/tag.png">
 <h2 id="atributos">Atributos das Tags.</h2>
+<hr />
 <small><a href="#inicio">(Voltar)</a></small>
-<p>Atributos são nada mais nada menos do que propriedades que uma tag pode ter, existem atributos gerais que todas as tags podem ter e atributos especificos de uma tag.</p>
-<p>Como exemplo de atributos temos o <strong>"style</strong> que muda a cor de um texto, ou o <strong>"class"</strong> em que você pode por um título padronizado.</p>
+<p>
+    Atributos são nada mais nada menos do que propriedades que uma tag pode ter, existem atributos gerais que todas as tags podem ter e atributos especificos de uma tag.
+</p>
+<p>
+    Como exemplo de atributos temos o <strong>"style</strong> que muda a cor de um texto, ou o <strong>"class"</strong> em que você pode por um título padronizado.
+</p>
 <img width="300" src="https://programadoresdepre.com.br/wp-content/uploads/2022/04/Atributos-HTML.jpg">
 <h2 id="textos">Textos</h2>
+<hr />
 <small><a href="#inicio">(Voltar)</a></small>
-<p>Quando se escreve em html se faz uso de algumas tags como <strong>"h1"</strong> <strong>"h2"</strong> até <strong>"h6"</strong> que são os cabeçalhos, os títulos, sendo o "h1' o maior e o "h6 o menor".</p>
-<p>Então entendendo que os "hs" são usados para títulos usamos o <strong>"p"</strong> para paragráfos e o <strong>"blockquote"</strong> para citações, por exemplo:</p>
+<p>
+    Quando se escreve em html se faz uso de algumas tags como <strong>"h1"</strong> <strong>"h2"</strong> até <strong>"h6"</strong> que são os cabeçalhos, os títulos, sendo o "h1' o maior e o "h6 o menor".
+</p>
+<p>
+    Então entendendo que os "hs" são usados para títulos usamos o <strong>"p"</strong> para paragráfos e o <strong>"blockquote"</strong> para citações, por exemplo:
+</p>
 <blockquote>
     <i>"O começo de todas as ciências é o espanto de as coisas serem o que são - Aristóteles"</i>
 </blockquote>
-<p>É claro que para deixar a formatação mais bonita eu usei a tag <strong>"i"</strong> de itálico, mas a citação fica com a formatação própria, apenas usando o <strong>"blockquote"</strong>.</p>
+<p>
+    É claro que para deixar a formatação mais bonita eu usei a tag <strong>"i"</strong> de itálico, mas a citação fica com a formatação própria, apenas usando o <strong>"blockquote"</strong>.
+</p>
 <h2 id="listas">Listas Ordenadas e Não Ordenadas</h2>
+<hr />
 <small><a href="#inicio">(Voltar)</a></small>
-<p> O <strong>"ol"</strong> por exemplo é a lista ordenada, mas ela não funciona sozinha, precisando da tag "filha" o <strong>"li"</strong>, a lista ordenada, a partir dai se coloca os itens, um embaixo do outro.</p>
+<p>
+     O <strong>"ol"</strong> por exemplo é a lista ordenada, mas ela não funciona sozinha, precisando da tag "filha" o <strong>"li"</strong>, a lista ordenada, a partir dai se coloca os itens, um embaixo do outro.
+    </p>
 <img width="350" src="https://i.ytimg.com/vi/Aid7zvwga64/maxresdefault.jpg">
-<p> Agora o <strong>"ul"</strong> é uma lista não ordenada, é uma lista que leva marcadores na frente, as "bolinhas", ela não tem uma ordem, diferente do <strong>"ol"</strong> que enumera a lista.</p>
+<p>
+     Agora o <strong>"ul"</strong> é uma lista não ordenada, é uma lista que leva marcadores na frente, as "bolinhas", ela não tem uma ordem, diferente do <strong>"ol"</strong> que enumera a lista.
+    </p>
 <h2 id="links">Links e Navegação</h2>
+<hr />
 <small><a href="#inicio">(Voltar)</a></small>
-<p>Basicamente nos navegamos na internet o tempo todo e os links nos ajudam com isso, nos levando de um lugar para outro</p>
-<p>Usamos o <strong>"a"</strong> para "acorar" quando estamos indo para algum lugar. </p>
+<p>
+    Basicamente nos navegamos na internet o tempo todo e os links nos ajudam com isso, nos levando de um lugar para outro
+</p>
+<p>
+    Usamos o <strong>"a"</strong> para "acorar" quando estamos indo para algum lugar. 
+</p>
+<h2>Falando mais de tags.</h2>
+<hr />
+<small><a href="#inicio">(Voltar)</a></small>
+<p>
+    Agora vamos direcionar nosso estudo as tags, todo esse site só está sendo mostrado dessa forma por causa delas, se você consegue voltar ao início da página clicando em voltar é porque uma tag está fazendo seu trabalho, a que eu usei especificamente é a <strong>"id"</strong> "identificação", ela está em todos os subtitulos, para que você consiga voltar para o topo ou ir para algum lugar.
+</p>
+<img width="400" src="https://global.discourse-cdn.com/codecademy/original/5X/d/f/a/6/dfa6590a7cd2064878b2e0857867b679cbb46dce.PNG">
+<p>
+    A imagem acima demostra como eu consigo fazer com que você consiga voltar, eu coloco esse <strong>"a href="</strong> abaixo dos títulos para que quando o site for aberto você possa navegar por ele de forma rapida, junto da tag <strong>id</strong>, essas duas tags são responsaveis pela sua navegação no site.
+</p>
+<h2 id="tags-form">Tags Form</h2>
+<hr />
+<small><a href="#inicio">(Voltar)</a></small>
+<p>
+   Usamos essa tag a <strong>"form"</strong> para criar um formulário, assim você consegue preencher os campos, é muito utilizado em pesquisas e formulários diversos, vou mostrar um exemplo.
+   <img width="350" src="https://sites.google.com/a/gcloud.fe.up.pt/si_ii/_/rsrc/1516574052832/home/ht/html-form/Capture.JPG">
+</p>
+<p>
+    Vou fazer um pequeno formulário para que você responda, veja:
+</p>
+<form name="contact" onsubmit="alert('formúlario enviado');" autocomplete="on" target="_blank" method="post" action="#">
+    Nome: <input type="text"name="name" /><br>
+    Idade: <input type="number"name="age" /><br>
+    Senha: <input type="password"name="password" /><br>
+    <button type="submit">Enviar</button>
+    <p>
+        Primeiro dentro do body a gente começa com a propria tag <strong>"form"</strong>, você a nomeia, eu nomeei a minha como contact, é importante saber que na programação usamos muito o inglês.
+    </p>
+    <p>
+        Então eu faço uma linha para cada informação, como nome e idade, usamos o <strong>"input"</strong> para definir se esse é um campo de texto, número e até senha, e para tornar de fato um formulário usamos a tag <strong>"button"</strong> e definimos que ali é onde você clicará para enviar.
+    </p>
+    <p>
+        Mas e agora? Se você clicar em enviar, para onde essa informação irá? É bem simples, na linha da tag form usamos uma tag chamada <strong>"action"</strong> a partir dai direcionamos essas informações para um site, eu coloquei por exemplo para que vá para meu site pessoal. Eu também posso usar a tag <strong>"method</strong> <strong>"="post""</strong> assim quando você enviar suas informações ela não apareça na barra de url, é uma forma muito mais segura de manter tanto seus dados quanto senha ocultos.
+    </p>
+    <p>
+        Alias esse formulário é diferente do começo da página, eu usei a tag <strong>"input"</strong> mas sem o form, como uma brincadeira, ou seja suas informações não foram salvas, essa tag <strong>"input"</strong> é como se fosse uma tag filha da tag <strong>"form"</strong> por isso ela abre um campo mas não funciona de fato como um formulário sozinha.
+    </p>
+    <p>
+        Podemos usar também a tag <strong>"target"</strong> ela decidirá se a página será aberta em outra aba ou na própria página, "blank" abre em outra página, "self" abre na mesma página. Podemos usar também a tag <strong>"autocomplete"</strong>, basicamente ele completa para você o campo, como quando o navegador pergunta se você tem interesse em manter sua senha salva, no entanto se você decidir que não, usa-se <strong>"autocomplete="off""</strong>, muito útil não? Muitas dessas tags usamos o dia a dia e nem percebemos.
+    </p>
+    <p>
+        Por fim tem uma tag muito interessante, a tag <strong>"onsubmit"</strong>, precisamente tudo que começa com "on" é um evento, e ao usar essa tag eu posso enviar um alerta para que quando você terminar o formúlario você saiba que foi definitivamente enviado.
+    </p>
+    <h2 id="tag-imput"> Tag Input e Tipos</h2>
+    <hr />
+    <small><a href="#inicio">(Voltar)</a></small>
+    <p>
+        A tag <strong>"input"</strong> tem muitos tipos, eu usei varias delas para estruturar o site, vamos estudar um pouco mais sobre elas sim?
+    </p>
+    <p>
+        Toda tag <strong>"input"</strong> é seguida do <strong>"type="""</strong> a partir dai temos varias outras tags, como por exemplo: <strong>"text"</strong> para texto, ou <strong>number</strong> para número, vale lembrar que essa ordem de "sub" tags estão em ordem alfabetica.
+    </p>
+    <p>
+        Também podemos fazer uso da tag <strong>label</strong> usamos ela dentro de uma tag <strong>"form"</strong>, ela fica parecida com um formulário comum mas a estrutura dentro do body é diferente, basicamente, fica mais ou menos assim:
+    </p>
+    <p>
+        <label>Text:</label><input type="text" /> <br>
+        <label>Number:</label><input type="number" min="0" max="999999" step="5"/> <br>
+        <label>Color:</label><input type="color" /> <br>
+        <label>E-mail:</label><input type="email" /> <br>
+        <label>url:</label><input type="url" /> <br>
+        <label>Range:</label><input type="range" /> <br>
+        <label>Date:</label><input type="date" /> <br>
+        <label>Button:</label><input type="button" value="Enviar" /> <br>
+        <button type="reset">Limpar</button>
+    </p>
+    <p>Usando a tag <strong>"label"</strong> você digita o que deseja, seguido da tag input e "text" para texto, vale lembrar que se pode usar o campo texto para escrever letras e numeros, diferente do campo <strong>number</strong> que só pode ser usado para escrever números.
+    </p>
+    <p>
+        Você pode também, no caso, usar o <strong>"min"</strong> que significa minimo, para definir o minimo que o tipo numero pode ir, por exemplo excluir a possibilidade de ir para um número menor do que zero. Há também o contrário, <strong>max</strong> para definir o número máximo que pode ser atingido. Outro atributo bem legal é o <strong>"step"</strong> com ele você pode pular de uma quantidade determinada, de 2 em 2, de 5 em 5, e por ai vai.
+    </p>
+    <p>
+        Outra tag que podemos usar é o <strong>"button"</strong> ou "botão", dentro dele você pode utilizar a tag <strong>"value"</strong> que gerara um botão na estrutura do site. 
+    </p>
+    <p>
+        Uma tag super interessante é o <strong>"range"</strong>, ele cria uma barra de rolagem, ele tem a mesma estrutura dentro do body, mas a formatação dele é diferente, ele também funciona com as tag <strong>"mim"</strong> e <strong>"max"</strong>, ou seja ele pode ter um limite. 
+    </p>
+    <p>
+        Outra tag que vale a pena mencionar é a <strong>"color"</strong> que cria um campo de cor no qual você mesmo pode escolher a cor.
+    </p>
+    <p>
+        Mas não acaba por ai, temos as tags, <strong>"email"</strong> para uma caixa de e-mail, temos, <strong>"url"</strong> para uma caixa de url, há <strong>"date"</strong> para data.
+    </p>
+    <h2 id="checkbox">Checkbox e Radio</h2>
+    <hr />
+    <small><a href="#inicio">(Voltar)</a></small>
+    <p>
+        Explicando de forma simples, uma checkbox é uma caixinha de marcação, é presente em formulários e pedidos, é uma forma muito útil de demarcar o que você precisa entre as opções disponiveis.  
+    </p>
+    <p>
+        Existem duas formas de uma checkbox, um quadrado e um circulo, sendo o circulo o mais comum, porém, é importante se atentar a um erro comum, que é a possibilidade de que em uma escolha de uma resposta você consiga marcar mais de uma, isso, no entanto, pode ser concertado.
+    </p>
+    <p>
+        Basicamente a estrutura de uma checkbox é assim:
+    </p>
+    <img src="https://www.wikihow.com/images/thumb/6/60/Create-a-Check-Box-with-HTML-Step-3.jpg/v4-460px-Create-a-Check-Box-with-HTML-Step-3.jpg.webp"> <br>
+    Mas no site aparecerá assim: <br>
+    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw8NDxAPDQ8PDQ0PEhIODxEODxAOEBIRFhEiGRYRExMkKDQgGBslJxUVJzEhJSotLjMvFx81PT8yNzQtLjcBCgoKDQ0OFw8PFSslHR0tLS0tLS0tNy0tLSstKzUwLS8rKy0tKy0tLSstLSstLS0tLS03LS02Ny0tLS0tLS0tLf/AABEIAIABiwMBIgACEQEDEQH/xAAcAAEAAwADAQEAAAAAAAAAAAAAAQcIBAUGAwL/xAA6EAABAwMBBQQJAwMEAwAAAAAAAQIDBAUR0xIXITGTE0FTVAgUIjVRYXF0swYjMgeBoSRCkbEVJTP/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AOj/AKT/ANNKK+UctTVTVUckdQ6BEgdE1uykTXZXLVXPtqe23CWrzNw6lPpkejh7rqfvX/gjLYAqjcJavM3DqU+mNwlq8zcOpT6Za4AqjcJavM3DqU+mNwlq8zcOpT6Za4AqjcJavM3DqU+mNwlq8zcOpT6Za4AqjcJavM3DqU+mNwlq8zcOpT6Za4AqjcJavM3DqU+mNwlq8zcOpT6Za4AqjcJavM3DqU+mNwlq8zcOpT6Za4AqjcJavM3DqU+mNwlq8zcOpT6Za4AqjcJavM3DqU+mNwlq8zcOpT6Za4AqjcJavM3DqU+mNwlq8zcOpT6Za4AqjcJavM3DqU+mNwlq8zcOpT6Za4AqjcJavM3DqU+mNwlq8zcOpT6Za4AqjcJavM3DqU+mNwlq8zcOpT6Za4AqjcJavM3DqU+mNwlq8zcOpT6Za4AqjcJavM3DqU+mNwlq8zcOpT6Za4AqjcJavM3DqU+mNwlq8zcOpT6Za4AqjcJavM3DqU+mNwlq8zcOpT6Za4AqjcJavM3DqU+mNwlq8zcOpT6Za4AqjcJavM3DqU+mNwlq8zcOpT6Za4AqjcJavM3DqU+mNwlq8zcOpT6Za4AqjcJavM3DqU+mNwlq8zcOpT6Za4AqjcJavM3DqU+mNwlq8zcOpT6Za4AqjcJavM3DqU+mNwlq8zcOpT6Za4AqjcJavM3DqU+mNwlq8zcOpT6Za4Aw65MKpB+n81+p+QNF+jh7rqfvX/gjLYKn9HD3XU/ev/BGWwBCnDZdadX9mk0aybSs2Ucn8k5tT5/LmferY58b2sXZe5jmtd8HKmEUrZaaRbbTWhGuZdWzRyYcitwkdSj31aScnNx3oucrjmBZ5Crgr6vlronyMb6+7YucLmK1lRI1aNyNV/tIio5nPh3H7pauuWuY57a9lM6aqhla9k70SPZ/aeiomy1uU9lW8fiuQPbW+uiqo2zQO24n52XYc3OFwvBePcpySsIqi6ep0zm+uPnYk/awSxVcMkuZ1SNUmROD0aiYR3s4XJ6n9SPqs0KM7dtM57m1jqdHPmZmFezzs+1s7WMq34fDIHpgeArkuUfaMWSsm2KONKKSON7Flqkdhzpmt4Iq+zwfwwq/M5NvhrZayq7SWsiWJtPLE39xtLJL2S9rGjlTZczaVOCKB7YFe29tydSvklqauKqfD2csa0c70in7TjIxcrtJzT9tMY4nd/p6KqqKKeOp7amnc+RjJElmVcbKI2WNX4ejc9zvn3AenB4L/wBktAx+KptVG+OlqE2nue+Fk2JqiNnerk4oqcccu4SzXFFcjEqlt61zGo7ZlWrSk7P21RP/AKbO3388fID2VXcYYXRslejHzO2Y0wq5X5r3JyTK4TKohyyvqmkuDpWQOqapKf1deyqkpJJHulSXOJWIvDhjCScF4952H64rp4lpGxPmVXpLtxUyS9q5Ui9mT9tHP2WqqZREVOKZXkB7EhSuYKqskiasc9XUw+of6aanbNtSV6PVH9qnNF5ey/2eZzHSXNauDtO1kY9II6hkfrECQv7LMj2PROykYqqucrnhhAPbxStemWOa9MqmWqjkyi8UyfCquMELkbLKyNzuKI5yIuM4z8kyqcSv7dDU09PHBHHXxvdXVCTK1KjYbGrnqx6rjKtX2eLFTK4ypzaWjmrKGiiq21EdZUMWlrJ1pVWVImKrnRyPXGwjsJ7XHPcB75AfmJiNajU5NRET6Ih+gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAw67mv1IJdzX6kAaL9HD3XU/ev/BGWwVP6OHuup+9f+CMtgAcOrtcEz45ZI0dLFns5EVWyMR38kRyccLjkcwARgYJAEYGCQBGBgkARgYJAEYGCQBGDi1dthmcx8jMyR5Rj2q5kjUd/JEeioqIuEyme45YA+NLTMhY2OJjY42phrWIjUT+x9cEgCMDBIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMOu5r9SCXc1+pAGi/Rw911P3r/wRlsFT+jh7rqfvX/gjLYAhTq4rv+/PE9itbExJo3JlyyMRVR6onxRUx/dDsZmuVqo12w5UVEdjawvxx3nRr+m9l0MkMrYJ4myMfIyBuZdtuFVyZ+KI76oBy4r9A92yiSo5XvjRHQvT22M2nM5c8f8AWD4MvOZUejlfSupVqWo2JyyJsvRODU4rnPLGSIbA9jImpUe1A7bjXskxxYrXq5M5c520qqueYo7DJCjNip9qOndTMd2LVVMu2kevHCqmE4YwBz66qcxWNauNpHOyqZ5Y4Y/uKCqc9zmuVF2Ua5Fxjnnh/g+lVRpLsqquRW5RFaqJz5/9E0lG2LKornK7GVcuVwnJP8qByQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGHXc1+pBLua/UgDRfo4e66n71/4Iy2Cp/Rw911P3r/AMEZbAEKcCK6xOlniXLFp2te9zuDVaucuRfgitVF+hzJ9rZXY2VfhdnaVUbnuyvwPPLZqhkkM0bo1lSOWKoSSaVWOR/HEfs8Pa4/4A7Zt4pVxiohXOyiYkaudr+P/J9XXCBHPYssaPjar3t20y1qcVcqdyJlDzqfp+pSLs09W2vU4KNF25ETajdlXfx5LnkfZLJUpOs21C5czq1NqRqYljRETCJhFRWpleKrz4cgO4S70yptJUQq3aRmUkaqbSplE+uFRf7nxpbun+o9YWOFIJuwRyv9l37bXovHkvt8vkdXJ+m3vZTI5Y9qKnfSTMZJJGx7HI1FcjkTP+xOCp38z6Q2WeOVZmrC5zJ1ljarn7LmrTJEu0uMtcmzlF481T5gd9HVRuVGtexznN7RERyKqszjbRPh8zg/+TdjaRrdnCrhXLnH/As1A+mZHEqxvYyNUVyIrX7avVVRqckZx4Jk/K2l2FakibK5T+HHC/PIHaMdlEX4pk/RDG4RETuTBIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGHXc1+pBLua/UgDRfo4e66n71/4Iy2Cp/Rw911P3r/AMEZbAHznk2Gq7Cu2UVcNTLlx3InepwKa8xysgfGyVWVKqka9njHDOXp/t5L/wAHZKefp7RMxtXGx6Rtd23qTkXjGsybTlVO7ZcvD5EHf7SfFBtJ8UPHx2ORGRo6nc9FmhdJGrqdrWo2NWyOaiOwqLlM8crjih+nWRyTOVtGvZ+txvaqOhROwSBGO4bWdlVTi3v7yj1yqh1cN7a6RsSxSMVZZKfLljwj2R7fHC8lTkefWx1UjY2vY+ONraiNrGugc6JXVG1HKxc4bhuEymVbjCIcp1tmfM1ZaV0kSVck7tp8DmqxaXs0VW7XHK9yoQeqyh+ZpUY1XLyamVweNistW6BjJIlWX1WKCJzpY1WlmY5dqTOe9FauW5X2cHpW0202oakfZOe7+aq1UlXYRO1wnLljC8fZKPq2vRVRFa5uVRMqrV4ry7zmIdRFQy7TVcjGta5HKqOVy8O7GDtwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMOu5r9SCXc1+pAGi/Rw911P3r/wRlsFT+jh7rqfvX/gjLYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMOu5r9SCXc1+pAFsf0l/qVQ2Silp6uOqfJJUOnRYI4nt2ViY1EVVci5yxe74Ht9/Fo8C4dGDUM4ADSG/i0eBcOjBqDfxaPAuHRg1DN4A0hv4tHgXDowag38WjwLh0YNQzeANIb+LR4Fw6MGoN/Fo8C4dGDUM3gDSG/i0eBcOjBqDfxaPAuHRg1DN4A0hv4tHgXDowag38WjwLh0YNQzeANIb+LR4Fw6MGoN/Fo8C4dGDUM3gDSG/i0eBcOjBqDfxaPAuHRg1DN4A0hv4tHgXDowag38WjwLh0YNQzeANIb+LR4Fw6MGoN/Fo8C4dGDUM3gDSG/i0eBcOjBqDfxaPAuHRg1DN4A0hv4tHgXDowag38WjwLh0YNQzeANIb+LR4Fw6MGoN/Fo8C4dGDUM3gDSG/i0eBcOjBqDfxaPAuHRg1DN4A0hv4tHgXDowag38WjwLh0YNQzeANIb+LR4Fw6MGoN/Fo8C4dGDUM3gDSG/i0eBcOjBqDfxaPAuHRg1DN4A0hv4tHgXDowag38WjwLh0YNQzeANIb+LR4Fw6MGoN/Fo8C4dGDUM3gDSG/i0eBcOjBqDfxaPAuHRg1DN4A0hv4tHgXDowag38WjwLh0YNQzeANIb+LR4Fw6MGoN/Fo8C4dGDUM3gDSG/i0eBcOjBqDfxaPAuHRg1DN4A0hv4tHgXDowag38WjwLh0YNQzeAJcvFSAAP//Z">
+    <p>
+        <p>
+            As imagens tem subtitulos diferentes, o que eu quis demostrar é a estrutura.
+        </p>
+        Há algumas coisas que você deve se atentar ao usar o checkbox, como por exemplo usar o sinal <strong>"[]"</strong> logo depois de <strong>"input type=checkbox name="opcional""</strong> para que a lista seja enviada corretamente para o servidor, outra coisa importante é alterar uma pequena informação na tag form, trocando o <strong>"get"</strong> por <strong>"post"</strong>.
+    </p>
+    <h2 id="buttons">Buttons e tipos </h2>
+        <hr />
+        <small><a href="#inicio">(Voltar)</a></small>
+        <p>
+            Há três botões que usaremos, eles são de certa forma semelhantes mas com suas proprias indivudualidades.
+        </p>
+        <p>
+            O primeiro é o <strong>"button type="button"Clicável"</strong> que é simplismente um botão clicável:
+            <button type="button">Clicável</button>.
+        </p>
+        <p>
+            Agora vamos adicionar um evento ao botão, <strong>"button onclick="alert ('Clique aqui')" type="button"Clicável"</strong>: <button type="button" onclick="alert('Clique aqui')">Clicável</button>, lembrando que cada tag sempre tem <strong>"<>"</strong> eu não as coloquei no exemplo mas estão sempre presentes.
+        </p>
+        <p>
+           Poderiamos usar também <strong>"onmouseover"</strong> que fara com que assim que o mouse passar por cima do botão a notificação aparecera automaticamente, vou demonstrar:
+        </p>
+        <button type="button" onmouseover="alert('Passei aqui')">Clicável</button>
+        <p>
+            Podemos usar também o <strong>"reset"</strong> que tem a função de limpar os campos que estão dentro de um form. <strong>button type="reset" Limpar button</strong>  que ficaria assim: <button type="reset">Limpar</button>. É claro que não há nada para limpar mas já da para compreender, eu usei por exemplo o botão de limpar no tópico Tag Imput. 
+        </p>
+        <p>
+            Por fim, o terceiro botão é o <strong>"submit"</strong>: <strong>button type="submit Enviar button"</strong> ficando: <button type="submit">Enviar</button>, é bem simples, submit significa enviar, um botão que sempre fica no fim dos formulários.
+        </p>
+        <p>
+            Não esquecendo por fim de colocar o <strong>"onsubmit"</strong> no form, para que ele possa validar se todos os campos foram preenchidos corretamente, levando em conta principalmente que o enter do teclado é como um botão de enviar, por isso deve-se tomar cuidado e garantir essa verificaão.
+        </p>
+        <h2 id="select">Select e Seus Tipos</h2>
+        <hr />
+        <small><a href="#inicio">(Voltar)</a></small>
+        <p>
+            Usamos o select para selecionar as informações que vão em um campo, por exemplo, quando você está se matriculando em uma faculdade ou buscando emprego, tem um campo perguntando qual área de interesse, mas ao invez de digitar, o botão select já tem criado semi-categorias/opções para que você possa escolher clicando e não escrevendo.
+        </p>
+        <p>
+            Com a tag <strong>"option"</strong> você tera um valor vazio com uma frase como: "selecione o cargo" ou "selecione o curso desejado" e então terá as opções, como história, letras, matemática etc.
+        </p>
+        <img  width="550" src="https://blog.betrybe.com/wp-content/uploads/2021/01/image-91.png">
+        <h2 id="textarea">Textarea</h2>
+        <hr />
+        <small><a href="#inicio">(Voltar)</a></small>
+        <p>
+            Em curtas palavras, "textarea" é uma área de texto, essa tag cria um campo de texto geralmente no final de um formúlario, como uma mensagem para o dono do site, ou algo que você quer comunicar, ele é maior que os outros campos de texto e possuiu duas barrinhas no final no canto direito para aumentar a área em que você quer escrever, isso se deve já que essa área de texto é própria para uma consideravel discussão ou comunicado.    
+        </p>
+        <img  width="500" src="https://www.simplilearn.com/ice9/free_resources_article_thumb/html-textarea.PNG">
+         <p>
+            Você também pode definir a quantidade de linhas e colunas, seja para um texto mais longo ou com mais paragráfos.
+         </p>
+         <h2 id="formatando">Formatando textos</h2>
+         <hr />
+         <small><a href="#inicio">(Voltar)</a></small>
+         <p>
+            Nesse tópico aprenderemos um pouco de semantica, uma pequena introdução já que será mais útil pela frente. 
+         </p>
+         <p>
+            E o que seria semantica? Segundo o google semântica é:
+        </p>
+            <blockquote>
+                <i>HTML semântico é o uso de marcação HTML para reforçar a semântica, ou significado, das informações em páginas da Web e aplicativos da Web, em vez de meramente definir sua apresentação ou aparência.</i>
+            </blockquote>
+        <p>
+            Por exemplo, eu uso bastante a tag <strong>"strong"</strong> para deixar outras tags ou partes importantes em negrito, para que além de ser mais fácil encontrar a informação necessária, ele destaca o texto, mostrando o que é importante. Ou por exemplo a tag <strong>"i"</strong> para deixar um texto em itálico, muito usado em citações e gírias.
+        </p>
+        <p>
+            Outra tag de marcação é <strong>"u"</strong> a, <i>underline</i> que coloca um tracejado em baixo de uma palavra ou frase, usado para destacar o texto, como também o <strong>"mark"</strong>. <mark>Este texto está marcado</mark> que simula o efeito de uma caneta marcadora de texto.
+        </p>
+        <p>
+            Nós também podemos usar o <strong>"sup"</strong> e <strong>"sub"</strong>, por exemplo, se eu escrever alguma coisa e colocar um asterisco, essa <i>"estrelinha"</i> ficará do mesmo tamanho que o texto, veja: 
+        </p>
+        <p><h2>Gatos*</h2></p>
+        <p>Gatos<sup>*</sup></p>
+            <p> 
+                Note que os asteriscos seguem o padrão do texto, mas se eu utilizar a tag "sup" ele vai mudar um pouco, ficando menor e mais para cima.
+            </p>
+        <img width="250" src="https://www.w3resource.com/w3r_images/sup-example.png">
+        <p>
+            Agora que entendemos um pouco dessas tags vamos falar de outra bem interessante, a tag <strong>"color"</strong> ou seja, cor, ela muda a coloração do texto, primeiro usamos a tag <strong>"font"</strong>, veja:
+        </p>
+        <font color="blue">Gatos</font> são incríveis! <font color="red">Cachorros</font> são legais também!
+        </p>
+        <p>
+            Podemos alterar também a fonte com a tag <strong>"face"</strong>, por exemplo:
+        </p>
+        <font color="orange" face="Arial" >Gatos</font> são fofos!
+        </p>
+        <p>
+            Podemos usar outras fontes na tag "face", isso seria util no caso de algum usuário que não tem a fonte que eu escolhi na formatação do meu site, por isso a tag "face" permite que eu utilize diversas fontes caso uma não funcione para alguma pessoa.
+        </p>
+        <h2 id="div-span">Div e Span</h2>
+        <hr />
+        <small><a href="#inicio">(Voltar)</a></small>
+        <p>
+            Div e Span são estruturas de texto, eles ajudam o corpo do texto, a ficar mais estruturado e fácil de entender.
+        </p>
+        <blockquote>
+           <i>"O elemento de divisão <strong>"div"</strong> é um container genérico para conteúdo de fluxo, que de certa forma não representa nada" - https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/div</i> 
+        </blockquote>
+        <p>
+            Basciamente tanto <strong>"span"</strong> quanto <strong>"div"</strong> são para estrura de texto, e enquanto div é um conteines de texto generico fluido, o span é um conteiner em linha.
+        </p>
+        <h2 id="fieldsets">Fieldsets</h2>
+        <hr />
+        <small><a href="#inicio">(Voltar)</a></small>
+        <p>
+            O<strong>"fieldset"</strong> é usado em formulários, para agrupar elementos, ele faz parte de toda a estruturação de um site.
+        </p>
+        <p>
+            Por exemplo, as vezes é necessário mais informações então para que o formulário não fique muito longo e extenso dividimos ele na metade, colocando algumas partes ao lado, fica mais dinamico e estruturalmente bonito e eu já falarei mais sobre isso.
+        </p>
+        <p>
+            Por si só, a tag "fieldset" traça um quadrado, retangulo ao redor do texto selecionado por exemplo:
+        </p>
+        <h3>Com fieldset:</h3>
+        <fieldset>
+            <legend>Exemplo</legend>
+            <label>Text:</label><input type="text" /> <br>
+            <label>Number:</label><input type="number"> <br>
+        </fieldset>
+        <h3> Sem fieldset:</h3>
+        <label>Text:</label><input type="text"></label> <br>
+        <label> Number:</label><input type="number"></label> <br>
+        <p>
+            Usamos o <strong>legend</strong> para criar um texto dentro do fieldset, como se fosse um pequeno texto a parte.
+        </p>
+        <p>
+            Pode-se mudar também o formato da borda, seja uma mais quadrada ou arredondada com o <strong>border-radius</strong> além da possibilidade de mudar a cor da borda.
+        </p>
+        <h2 id="embeds">Embeds</h2>
+        <hr />
+        <small><a href="#inicio">(Voltar)</a></small>
+        <p>
+            Embed é uma tag, uma ferramente que permite colocar conteúdo externo na parte escolhida do texto.
+        </p>
+        <p>Você pode usar tanto arquivos dentro do seu computador quanto links do youtube, é uma excelente tag para mostrar algo ou entreter.</p>
+           <h2 id="iframes">Iframes</h2> 
+           <hr />
+           <small><a href="#inicio">(Voltar)</a></small>
+           <p>
+            De uma forma bem resumida, <strong>"iframe"</strong> é exibir conteúdo de outra pagina em uma outra.
+           </p>
+           <blockquote>
+            <i>"O elemento HTML <STRONg>"iframe</STRONg> (ou elemento HTML inline frame) representa um contexto de navegação aninhado, efetivamente incorporando outra página HTML para a página atual." -MDM WEB DOCS</i>
+           </blockquote>
+           <iframe src="https://web.dio.me/home" width="500" height="400"></iframe>
+         <h2 id="intro">Introdução a Tags de Mídia</h2>
+         <hr />
+         <small><a href="#inicio">(Voltar)</a></small>
+         <p>
+            Tags de Mídia estão relacionadas a mídias em geral, há a possibilidade de usar vídeos, áudios, imagens e etc.
+         </p>
+         <img width="350" src="https://media.tenor.com/0Mg3R5jZUnQAAAAd/thanos-dance.gif">
+         <p>Um exemplo de tag de mídia é a tag <strong>"img"</strong> que insere uma imagem ou gif, como representado acima, podemos usar também tags de áudio e vídeo, essas são exemplos de tags de mídia. </p>
+         <p>Vamos seguir a diante com a tag img.</p>
+        <h2 id="tag-img">Tag Img</h2>
+        <hr />
+        <small><a href="#inicio">(Voltar)</a></small>
+        <p>A tag <strong>"img"</strong> é uma tag que permite inserir imagens e gifs no corpo do texto, mas ela não funciona sozinha, sempre que se usa ela, é necessário fazer uso do <strong>"src</strong> o source ou a fonte da imagem, podendo ser um arquivo da maquina ou da internet.</p>
+        <p>Outra coisa importante é o <strong>"width</strong>, diferente do src que vem automaticamente ao digitar a tag img, o widht é opcional, ele serve para alterar o tamanho da imagem, caso você não faça uso dele, a imagem ficará do tamanho original.</p>
+        <p>É útil falar sobre a diferença entre png e jpg, por exemplo, pgn por exemplo é um formato mais pesado do que jpg, embora o png seja mais adpatavel a diferentes cores, ficando mais fluxo e bonito esteticamente. </p>
+        <p>Outros atributos interessantes são o <strong>"tittle"</strong>, título e o <strong>"alt"</strong> ambos podendo ser usados na tag img.</p>
+        <p>O tittle, adiciona um pequeno balão de informação, enquanto o alt é uma breve descrição, ele é uma ferramenta auxiliadora para uma pessoa que não pode enxergar, servindo como uma descrição que pode ser ouvida:</p>
+        <img title="Luffy!" width="300" src="https://epipoca.com.br/wp-content/uploads/2022/04/luffy-one-piece-1015.jpg" alt="Um garoto de pele clara, com um chapéu de palha cobrindo o rosto, o chapéu é desgastado e tem uma fita vermelha, o jovem está com uma expressão séria, enquanto segura seu chápeu sobre a cabeça, usando uma capa preta e uma blusa vermelha de mangas longas, o garoto tem cabelos pretos espetados, caso seja familiar, esse é Monkey D. Luffy do anime One Piece.">   
+             <h2 id="tag-audio">Tag Audio</h2>
+             <hr />
+             <small><a href="#inicio">(Voltar)</a></small>
+                <p>É uma tag especificamente para audio, composta de <strong>"audio"</strong> possuindo uma sub-tag ou uma tag filha que é a <strong>"source"</strong>.</p>
+                <img  width="400" src="https://storage.googleapis.com/dpw/app/uploads/2019/06/10-elementos-html-audio.png">
+                <p>Agora uma demostração na prática!:)</p>
+                    <audio controls src="Binks Sake One Piece _ HD_★ Quality★_46SJtTC23yE.mp3"></audio>
+                    <p>Existem outras funções que podemos usar, como o controls, que adiciona os botões de audio e o <strong>"autoplay"</strong> que como o nome diz, da um autoplay ao entrar na página.</p>
+             <h2 id="tag-vid">Tag Video</h2>
+             <hr />
+             <small><a href="#inicio">(Voltar)</a></small>   
+                <p>Basicamente, graças a tag de vídeo podemos inccrementar vídeos ao nosso site, por exemplo:</p>
+                <small><p>Aviso: Vídeo com volume alto, abaixar antes de dar play</p></small>
+                <video width="350" controls>
+                   <source src="X2Download.app-Ghost - Griftwood (Official Audio).mp4">
+                </video>    
+            <p>Tanto a tag video quanto a tag audio tem tags em comum, como o src, o width e o control.</p>
+             <h2 id="tabelas">O que são tabelas?</h2>
+             <hr />
+             <small><a href="#inicio">(Voltar)</a></small>
+                <p>Tabelas são listas compostas por colunas e linhas usados em muitos outros formatos, como word, power point etc.</p>   
+             <img width="350" src="http://www.hiperbytes.com.br/wp-content/uploads/2013/10/Cap5tabela6.jpg">
+            <h2 id="table">Tag Table</h2>
+            <hr />
+            <small><a href="#inicio">(Voltar)</a></small>
+            <p>A tag table abre um campo para tabela, mas não funciona sozinha, precisando da tag, <strong>"tr"</strong> seguido de <strong>"td"</strong>.</p>
+            <table border="1" width="300">
+                <tr>
+                    <td>Nome</td>
+                    <td>Idade</td>
+                </tr>
+                <tr>
+                    <td>Alana</td>
+                    <td>23</td>
+                </tr>
+             </table>   
+             <p>Usa-se o <strong>"border"</strong> para criar uma borda ao redor da tabela, o <strong>""cellspacing</strong> ele dá uma distancia da borda, enquanto o <strong>"cellspadding"</strong> aumenta a distancia das letras, também podemos fazer uso do sumarry para criar uma descrição da tabela.</p>
+           <h2 id="tr">Tag tr</h2>
+           <hr />
+           <small><a href="#inicio">(Voltar)</a></small>
+           <p>A tag str significa: table roll, uma linha da tabela.</p>
+           <img width="350" src="https://vertex-academy.com/tutorials/wp-content/uploads/2016/08/table.png">
+           <p>Podemos usar o style para definir cores para cada linha ou fazer com que ao passar o mouse fique destacado.</p>
+           <style>
+            table tr:nth-child(even) {
+                background-color: coral;
+            }
+            table th:hover td{
+                background-color: darkkhaki;
+            }
+            </style> 
+        <table border="1" width="300">
+            <tr>
+                 <th>Nome</th>
+                 <th>Idade</th>
+                 <th>Musica favorita</th>
+            </tr>
+            <tr>
+                 <td>Alana</td>
+                 <td>23</td>
+                 <td>Shinonuga E-Wa</td>
+            </tr>
+            <tr>
+                 <td>Roberta</td>
+                 <td>19</td>
+                 <td>Burning Pile</td>
+            </tr> 
+            <tr>
+                 <td>Alexandre</td>
+                 <td>25</td>
+                 <td>Zombie Queem/Ghouleh</td>
+            </tr>
+            <tr>
+                <td>Marina</td>
+                <td>28</td>
+                <td>Rap do Solitário</td>
+            </tr>
+            <tr>
+                <td>José</td>
+                <td>56</td>
+                <td>Garota de Ipanema</td>
+            </tr>
+            <tr>
+                <td>Pietro</td>
+                <td>16</td>
+                <td>Tipo Sasori</td>
+            </tr>
+        </table>
+        <h2 id="td-th">Tag TD e TH</h2>
+        <hr />
+           <small><a href="#inicio">(Voltar)</a></small>
+           <p>A tag th é uma tag de identificação, ela identifica qual é o cabeçalho da tabela.</p>
+           <p>Com th:</p>
+           <table border="1">
+            <tr>
+                <th title="Nome Completo">Nome</th>
+                <th>Idade</th>
+                <th>Animal de estimação</th>
+            </tr>
+            <tr>
+                <td>Anderson</td>
+                <td>34</td>
+                <td>Periquito</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>17</td>
+                <td>Dois cachorros</td>
+            </tr>
+            <tr>
+                <td>Eric</td>
+                <td>5</td>
+                <td>Gato</td>
+            </tr>
+           </table>
+
+           <p>Sem th:</p>
+
+           <table border="1">
+           <tr>
+            <td title="Nome completo">Nome</td>
+            <td>Idade</td>
+            <td>Animal de estimação</td>
+        </tr>
+        <tr>
+            <td>Anderson</td>
+            <td>34</td>
+            <td>Periquito</td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>17</td>
+            <td>Dois cachorros</td>
+        </tr>
+        <tr>
+            <td>Eric</td>
+            <td>5</td>
+            <td>Gato</td>
+        </tr>
+       </table>
+       <p>É bom colocar o tittle para que a leitura do html seja muito mais simpatica para pessoas com cegues, além do summary que adciona uma descrição.</p>
+       <h2 id="t3">Tag tbody, thead e tfoot</h2>
+       <hr />
+          <small><a href="#inicio">(Voltar)</a></small>
+          <p>Podemos usar o <strong>"tbody"</strong> para agrupar toda a lista dentro dela. Além do tfoot, que é basicamente um rodapé, assim como o thead é a cabeça da tabela. </p>
+           
+          <table border="1" align="center">
+            <caption>Tabela, dados básicos funcionários</caption>
+                <thead>
+                    <tr>
+                        <td title="Nome completo">Nome</td>
+                        <td>Idade</td>
+                        <td>Animal de estimação</td>
+                    </tr>
+                </thead>
+            <tbody>
+            <tr>
+                <td>Anderson</td>
+                <td>34</td>
+                <td>Periquito</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>17</td>
+                <td>Dois cachorros</td>
+            </tr>
+            <tr>
+                <td>Eric</td>
+                <td>5</td>
+                <td>Gato</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>3</td>
+                <td>4 animais</td>
+            </tr>
+
+        </tfoot>
+            </table> 
 </body>
 </html>
